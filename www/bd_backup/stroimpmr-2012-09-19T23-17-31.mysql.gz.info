@@ -1,0 +1,8 @@
+filename = "stroimpmr-2012-09-19T23-17-31"
+description = ""
+datestamp = "1348082252"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.15"
+sites[0][name] = "stroimpmr"
+sites[0][url] = "http://stroimpmr/"
