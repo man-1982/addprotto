@@ -1,0 +1,7 @@
+name = Taxonomy effects
+description = Taxonomy effects on base jQuery UI effect
+core = 7.x
+package = Stroimpmr
+version = 7.x-1.0
+project = t17n
+features[features_api][] = api:1
