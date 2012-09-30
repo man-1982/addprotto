@@ -1,8 +1,7 @@
 <?php
-
 /**
  * @file
- * Bartik's theme implementation for comments.
+ * Zen theme's implementation for comments.
  *
  * Available variables:
  * - $author: Comment author. Can be link or plain text.
@@ -13,6 +12,8 @@
  * - $created: Formatted date and time for when the comment was created.
  *   Preprocess functions can reformat it by calling format_date() with the
  *   desired parameters on the $comment->created variable.
+ * - $pubdate: Formatted date and time for when the comment was created wrapped
+ *   in a HTML5 time element.
  * - $changed: Formatted date and time for when the comment was last changed.
  *   Preprocess functions can reformat it by calling format_date() with the
  *   desired parameters on the $comment->changed variable.
@@ -32,10 +33,14 @@
  *   - comment-by-anonymous: Comment by an unregistered user.
  *   - comment-by-node-author: Comment by the author of the parent node.
  *   - comment-preview: When previewing a new or edited comment.
+ *   - first: The first comment in the list of displayed comments.
+ *   - last: The last comment in the list of displayed comments.
+ *   - odd: An odd-numbered comment in the list of displayed comments.
+ *   - even: An even-numbered comment in the list of displayed comments.
  *   The following applies only to viewers who are registered users:
  *   - comment-unpublished: An unpublished comment visible only to administrators.
  *   - comment-by-viewer: Comment by the user currently viewing the page.
- *   - comment-new: New comment since last the visit.
+ *   - comment-new: New comment since the last visit.
  * - $title_prefix (array): An array containing additional output populated by
  *   modules, intended to be displayed in front of the main title tag that
  *   appears in the template.
@@ -53,53 +58,49 @@
  *
  * @see template_preprocess()
  * @see template_preprocess_comment()
+ * @see zen_preprocess_comment()
  * @see template_process()
  * @see theme_comment()
  */
 ?>
-<div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<article class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <div class="attribution">
-
-    <?php print $picture; ?>
-
-    <div class="submitted">
-      <p class="commenter-name">
-        <?php print $author; ?>
-      </p>
-      <p class="comment-time">
-        <?php print $created; ?>
-      </p>
-      <p class="comment-permalink">
-        <?php print $permalink; ?>
-      </p>
-    </div>
-  </div>
-
-  <div class="comment-text">
-    <div class="comment-arrow"></div>
-
-    <?php if ($new): ?>
-      <span class="new"><?php print $new; ?></span>
-    <?php endif; ?>
+  <header>
+    <p class="submitted">
+      <?php print $picture; ?>
+      <?php print $submitted; ?>
+      <?php print $permalink; ?>
+    </p>
 
     <?php print render($title_prefix); ?>
-    <h3<?php print $title_attributes; ?>><?php print $title; ?></h3>
+    <?php if ($title): ?>
+      <h3<?php print $title_attributes; ?>>
+        <?php print $title; ?>
+        <?php if ($new): ?>
+          <mark class="new"><?php print $new; ?></mark>
+        <?php endif; ?>
+      </h3>
+    <?php elseif ($new): ?>
+      <mark class="new"><?php print $new; ?></mark>
+    <?php endif; ?>
     <?php print render($title_suffix); ?>
 
-    <div class="content"<?php print $content_attributes; ?>>
-      <?php
-        // We hide the comments and links now so that we can render them later.
-        hide($content['links']);
-        print render($content);
-      ?>
-      <?php if ($signature): ?>
-      <div class="user-signature clearfix">
-        <?php print $signature; ?>
-      </div>
-      <?php endif; ?>
-    </div> <!-- /.content -->
+    <?php if ($status == 'comment-unpublished'): ?>
+      <p class="unpublished"><?php print t('Unpublished'); ?></p>
+    <?php endif; ?>
+  </header>
 
-    <?php print render($content['links']); ?>
-  </div> <!-- /.comment-text -->
-</div>
+  <?php
+    // We hide the comments and links now so that we can render them later.
+    hide($content['links']);
+    print render($content);
+  ?>
+
+  <?php if ($signature): ?>
+    <footer class="user-signature clearfix">
+      <?php print $signature; ?>
+    </footer>
+  <?php endif; ?>
+
+  <?php print render($content['links']) ?>
+</article><!-- /.comment -->

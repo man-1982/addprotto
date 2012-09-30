@@ -1,13 +1,12 @@
 <?php
-
 /**
  * @file
- * Bartik's theme implementation to provide an HTML container for comments.
+ * Zen theme's implementation to provide an HTML container for comments.
  *
  * Available variables:
  * - $content: The array of content-related elements for the node. Use
- *   render($content) to print them all, or
- *   print a subset such as render($content['comment_form']).
+ *   render($content) to print them all, or print a subset such as
+ *   render($content['comment_form']).
  * - $classes: String of classes that can be used to style contextually through
  *   CSS. It can be manipulated through the variable $classes_array from
  *   preprocess functions. The default value has the following:
@@ -34,18 +33,22 @@
  * @see template_preprocess_comment_wrapper()
  * @see theme_comment_wrapper()
  */
+
+// Render the comments and form first to see if we need headings.
+$comments = render($content['comments']);
+$comment_form = render($content['comment_form']);
 ?>
-<div id="comments" class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <?php if ($content['comments'] && $node->type != 'forum'): ?>
-    <?php print render($title_prefix); ?>
+<section class="comments <?php print $classes; ?>"<?php print $attributes; ?>>
+  <?php print render($title_prefix); ?>
+  <?php if ($comments && $node->type != 'forum'): ?>
     <h2 class="title"><?php print t('Comments'); ?></h2>
-    <?php print render($title_suffix); ?>
   <?php endif; ?>
+  <?php print render($title_suffix); ?>
 
-  <?php print render($content['comments']); ?>
+  <?php print $comments; ?>
 
-  <?php if ($content['comment_form']): ?>
+  <?php if ($comment_form): ?>
     <h2 class="title comment-form"><?php print t('Add new comment'); ?></h2>
-    <?php print render($content['comment_form']); ?>
+    <?php print $comment_form; ?>
   <?php endif; ?>
-</div>
+</section>

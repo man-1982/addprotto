@@ -1,8 +1,7 @@
 <?php
-
 /**
  * @file
- * Bartik's theme implementation to display a node.
+ * Zen theme's implementation to display a node.
  *
  * Available variables:
  * - $title: the (sanitized) title of the node.
@@ -28,11 +27,14 @@
  *     name will often be in a short form of the human readable label.
  *   - node-teaser: Nodes in teaser form.
  *   - node-preview: Nodes in preview mode.
+ *   - view-mode-[mode]: The view mode, e.g. 'full', 'teaser'...
  *   The following are controlled through the node publishing options.
  *   - node-promoted: Nodes promoted to the front page.
  *   - node-sticky: Nodes ordered above other non-sticky nodes in teaser
  *     listings.
  *   - node-unpublished: Unpublished nodes visible only to administrators.
+ *   The following applies only to viewers who are registered users:
+ *   - node-by-viewer: Node is authored by the user currently viewing the page.
  * - $title_prefix (array): An array containing additional output populated by
  *   modules, intended to be displayed in front of the main title tag that
  *   appears in the template.
@@ -46,6 +48,8 @@
  * - $comment_count: Number of comments attached to the node.
  * - $uid: User ID of the node author.
  * - $created: Time the node was published formatted in Unix timestamp.
+ * - $pubdate: Formatted date and time for when the node was published wrapped
+ *   in a HTML5 time element.
  * - $classes_array: Array of html class attribute values. It is flattened
  *   into a string within the variable $classes.
  * - $zebra: Outputs either "even" or "odd". Useful for zebra striping in
@@ -61,7 +65,7 @@
  * - $status: Flag for published status.
  * - $comment: State of comment settings for the node.
  * - $readmore: Flags true if the teaser content of the node cannot hold the
- *   main body content.
+ *   main body content. Currently broken; see http://drupal.org/node/823380
  * - $is_front: Flags true when presented in the front page.
  * - $logged_in: Flags true when the current user is a logged-in member.
  * - $is_admin: Flags true when the current user is an administrator.
@@ -75,50 +79,42 @@
  *
  * @see template_preprocess()
  * @see template_preprocess_node()
+ * @see zen_preprocess_node()
  * @see template_process()
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<article class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>>
-      <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
-    </h2>
+  <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
+    <header>
+      <?php print render($title_prefix); ?>
+      <?php if (!$page && $title): ?>
+        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+
+      <?php if ($display_submitted): ?>
+        <p class="submitted">
+          <?php print $user_picture; ?>
+          <?php print $submitted; ?>
+        </p>
+      <?php endif; ?>
+
+      <?php if ($unpublished): ?>
+        <p class="unpublished"><?php print t('Unpublished'); ?></p>
+      <?php endif; ?>
+    </header>
   <?php endif; ?>
-  <?php print render($title_suffix); ?>
-
-  <?php if ($display_submitted): ?>
-    <div class="meta submitted">
-      <?php print $user_picture; ?>
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
-
-  <div class="content clearfix"<?php print $content_attributes; ?>>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      print render($content);
-    ?>
-  </div>
 
   <?php
-    // Remove the "Add new comment" link on the teaser page or if the comment
-    // form is being displayed on the same page.
-    if ($teaser || !empty($content['comments']['comment_form'])) {
-      unset($content['links']['comment']['#links']['comment-add']);
-    }
-    // Only display the wrapper div if there are links.
-    $links = render($content['links']);
-    if ($links):
+    // We hide the comments and links now so that we can render them later.
+    hide($content['comments']);
+    hide($content['links']);
+    print render($content);
   ?>
-    <div class="link-wrapper">
-      <?php print $links; ?>
-    </div>
-  <?php endif; ?>
+
+  <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>
 
-</div>
+</article><!-- /.node -->
