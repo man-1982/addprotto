@@ -4,6 +4,9 @@
  * Drupal needs this blank file.
  */
 
+/**
+ * Implementations hook_menu
+ */
 function t17n_menu() {
   $items['admin/structure/t17n'] = array(
     'title'             => 'Taxonomy effects',
@@ -23,4 +26,52 @@ function t17n_menu() {
   );
 
   return $items;
+}
+
+/**
+ * IMplementation hook_theme
+ */
+function t17n_theme($existing, $type, $theme, $path) {
+  $theme = array(
+    't17n_hierarchical_tree' => array(
+        'variables' => array('hierarchical_tree' => NULL, 'attributes' => array()),
+    ),
+  );
+return $theme;
+}
+
+function t17_items_devel() {
+  $items = array();
+  $items[] = array(
+    'data'  => 'value-1',
+    'class' => array('class-1'),
+  );
+
+  $items[] = array(
+    'data'  => array('children' => array('value-10')),
+    'class' => array('class-1'),
+  );
+
+  $items[] = 'value-2';
+
+  $items[] = array(
+    'children' => array(
+      'value-3',
+    ),
+  );
+  $items[] = array(
+    'children' => array(
+     'data' => 'value-4',
+    ),
+    'class'  => array( 'class-5'),
+  );
+
+
+  $variables = array();
+  $variables['items'] = $items;
+  $variables['title'] = 'title';
+  $variables['type'] = 'ul';
+  $variables['attributes'] = array('id' => 'proba-1', 'class' => array('proba-class-1', 'proba-class-2'));;
+
+  return theme_item_list($variables);
 }

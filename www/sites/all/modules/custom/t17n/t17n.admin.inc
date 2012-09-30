@@ -80,9 +80,14 @@ function t17n_settings_voc_form($form, &$form_state, $voc) {
   $form['#attached']['js'][] = $jquery_ui_path_js .'jquery.ui.accordion.js';
 
   $hierarchical_tree = t17n_get_hierarchical_tree($voc->vid);
-  dpm(t17n_get_hierarchical_tree($voc->vid), 'child tree');
 
-  dpm(theme_t17n_hierarchical_tree($hierarchical_tree));
+  dpm(t17n_get_hierarchical_tree($voc->vid), 'child tree');
+  $variables['hierarchical_tree'] = $hierarchical_tree;
+  $variables['attributes'] = array();
+  $form['tree'] = array(
+    '#markup' => theme('t17n_hierarchical_tree', $variables),
+);
+//  dpm(theme_t17n_hierarchical_tree($hierarchical_tree), 'theme_t17n_hierarchical_tree');
 
   return $form;
 }
@@ -106,7 +111,8 @@ function t17n_get_parents_tree($vid) {
     $query->orderBy('t.weight');
     $query->orderBy('t.name');
     $tids = $query->execute()->fetchCol();
-    $parents[$vid] = taxonomy_term_load_multiple($tids);
+    $terms = taxonomy_term_load_multiple($tids);
+    $parents[$vid] = $terms;
   }
 
   return isset($parents[$vid]) ? $parents[$vid] : array();
@@ -117,16 +123,17 @@ function t17n_get_parents_tree($vid) {
  * @param $tree
  */
 function t17_get_childs_tree($tree_parent) {
-
+   static $t17_level;
   $childs_tree = array();
 
   foreach($tree_parent as $key => $parent_term) {
     $childs = taxonomy_get_children($parent_term->tid, $parent_term->vid);
     if (!empty($childs)) {
       $tree_parent[$key]->childs = t17_get_childs_tree($childs);
-
+      $tree_parent[$key]->t17level = $t17_level;
     }
   }
+
   return $tree_parent;
 }
 
@@ -145,8 +152,10 @@ function t17n_get_hierarchical_tree($vid) {
 /**
  * @param $voc
  */
-function theme_t17n_hierarchical_tree($hierarchical_tree) {
-  $output = _theme_t17n_hierarchical_tree($hierarchical_tree);
+function theme_t17n_hierarchical_tree($variables) {
+  $hierarchical_tree = $variables['hierarchical_tree'];
+  $attributes = $variables['attributes'];
+  $output = _theme_t17n_hierarchical_tree($hierarchical_tree, $attributes);
  return $output;
 }
 
@@ -155,26 +164,27 @@ function theme_t17n_hierarchical_tree($hierarchical_tree) {
  * @param $hierarchical_tree
  * @return string
  */
-function _theme_t17n_hierarchical_tree($hierarchical_tree) {
-
-  $items = array();
+function _theme_t17n_hierarchical_tree($hierarchical_tree, $attributes = array()) {
   if (!is_array($hierarchical_tree)|| empty($hierarchical_tree)) {
-    return $items;
+    return '';
   }
+  $attributes['class'][] =  't17n-treeview';
+
+  $output = '<ul' . drupal_attributes($attributes) . ">\n";
+
   foreach($hierarchical_tree as $key => $term) {
-    $items[] = array(
-      'data'  => check_plain($term->name),
-      //TODO add class
-      'class' => array(),
-    );
-    if(is_array($term->childs)&&!empty($term->childs)) {
-      $childs_array = $term->childs;
-      $items[]= array(
-        'children'  =>  _theme_t17n_hierarchical_tree($childs_array),
-        //TODO add class
-        'class'     => array(),
-      );
-    }
+    $attributes_term = isset($term->attributes) ? $term->attributes : array();
+     $output .= '<li' .drupal_attributes($attributes_term) . '>';
+
+      $output .= l($term->name .' - ' . $term->tid, 'taxonomy/term/' . $term->tid);
+
+        if(is_array($term->childs)&&!empty($term->childs)) {
+          $childs_array = $term->childs;
+           $output .= _theme_t17n_hierarchical_tree($childs_array, array('class' => array('child'))) . "\n";
+        }
+    $output .= "</li>\n";
   }
-  return $items;
+  $output .= "</ul>\n";
+  return $output;
 }
+
