@@ -45,9 +45,9 @@
 
   <header id="header" role="banner">
 
-    <?php if ($logo): ?>
-      <a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-    <?php endif; ?>
+<!--    --><?php //if ($logo): ?>
+<!--      <a href="--><?php //print $base_path; ?><!--" title="--><?php //print t('Home'); ?><!--" rel="home" id="logo"><img src="--><?php //print $logo; ?><!--" alt="--><?php //print t('Home'); ?><!--" /></a>-->
+<!--    --><?php //endif; ?>
 
 
 
