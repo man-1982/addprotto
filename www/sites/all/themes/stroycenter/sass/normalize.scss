@@ -117,7 +117,7 @@ audio:not([controls]) {
  */
 
 html {
-  font-size: 100% * ($base-font-size / 16px); /* 1 */
+  font-size: 100% * ($base-font-size / 13px); /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* 2 */
   /* Establishes a vertical rhythm unit using $base-line-height. */
@@ -632,13 +632,27 @@ textarea {
  */
 
 table {
+  text-align: left;
+  border-spacing: 0px;
+  border: 1px solid #aeb3b6;
   border-collapse: collapse;
-  border-spacing: 0;
   /* width: 100%; */ /* Prevent cramped-looking tables */
   /* Add vertical rhythm margins. */
   @include leader(1);
   @include trailer(1);
+
+  tbody {
+    border-top: none;
+    line-height: 2.0em;
+    font-size: 13px;
+    color: #55595c;
+    td {
+      line-height: 2.5em;
+    }
+  }
+
 }
+
 
 /*
  * Drupal provides table styling which is only useful for its admin section
@@ -649,8 +663,4 @@ th {
   text-align: left; /* LTR */
   padding: 0;
   border-bottom: none;
-}
-
-tbody {
-  border-top: none;
 }

@@ -1,7 +1,8 @@
 <?php
 
 function stroycenter_preprocess_page(&$vars) {
-  dpm($vars);
+//  dpm($vars);
+    // Вставлеям лого в середину меню
   if (isset($vars['main_menu'])) {
     $image_logo = theme_image(
       array(
@@ -26,4 +27,16 @@ function stroycenter_preprocess_page(&$vars) {
     }
     $vars['main_menu'] = $menu_with_image;
   }
+}
+
+
+function stroycenter_preprocess_search_block_form(&$variables) {
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ *
+ */
+
+function stroycenter_form_search_block_form_alter(&$form, &$form_state, $form_id) {
 }

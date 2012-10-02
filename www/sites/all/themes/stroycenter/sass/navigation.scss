@@ -58,15 +58,22 @@ li a.active {
 
   ul.links, /* Main menu and secondary menu links */
   ul.menu { /* Menu block links */
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     text-align: left; /* LTR */
+    display: block;
+    width: $zen-grid-width - 10;
 
     li { /* A simple method to get navigation links to appear in one line. */
-      float: left; /* LTR */
-      padding: 0 10px 0 0; /* LTR */
-      list-style-type: none;
-      list-style-image: none;
+          float: left; /* LTR */
+          padding: 0 10px 0 0; /* LTR */
+          list-style-type: none;
+          list-style-image: none;
+          padding-top: 260px;
+
+    }
+    li.menu-with-logo {
+      padding: 0 10px 0 0;
     }
   }
 }
@@ -79,6 +86,12 @@ li a.active {
  */
 
 #main-menu {
+
+  //li.menu-with-logo {
+  //  position: relative;
+  //}
+
+
 }
 
 #secondary-menu {
