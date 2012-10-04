@@ -122,19 +122,35 @@ function t17n_get_parents_tree($vid) {
  * Get childs for terms tree
  * @param $tree
  */
-function t17_get_childs_tree($tree_parent) {
-   static $t17_level;
-  $childs_tree = array();
+function t17_get_childs_tree($tree, $depth = 0) {
+  $tree_parent = array();
+  if(is_array($tree)) {
 
-  foreach($tree_parent as $key => $parent_term) {
-    $childs = taxonomy_get_children($parent_term->tid, $parent_term->vid);
-    if (!empty($childs)) {
-      $tree_parent[$key]->childs = t17_get_childs_tree($childs);
-      $tree_parent[$key]->t17level = $t17_level;
+    foreach($tree as $key => $parent_term) {
+      $tree_parent[$key] = $parent_term;
+      $childs = taxonomy_get_children($parent_term->tid, $parent_term->vid);
+
+      $tree_parent[$key]->t17_depth = $depth;
+      if (!empty($childs)) {
+        $tree_parent[$key]->childs = t17_get_childs_tree($childs, ++$depth);
+      }
+    else {
+
+      }
+
     }
+
   }
 
+
   return $tree_parent;
+}
+
+function t17_get_level($hierarchical_tree, $level = 0) {
+    $deep = array();
+  foreach($hierarchical_tree as $key => $terms) {
+      $hierarchical_tree[$key]->depth = 0;
+  }
 }
 
 /**
