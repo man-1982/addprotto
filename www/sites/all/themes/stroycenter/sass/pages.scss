@@ -22,6 +22,13 @@ body {
 #page {
 }
 
+@import "compass/typography/links";
+
+a{
+  //
+  @include link-colors(#1C94C4, #eb8f00, #ff7804);
+}
+
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
  * See the element-focusable rule in system.base.css.
@@ -40,6 +47,9 @@ body {
     color: #fff;
   }
 }
+
+
+
 
 /*
  * Header

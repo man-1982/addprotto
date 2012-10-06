@@ -1,6 +1,6 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\000034}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\000034}}
 table {
-  border: 2px solid black;
+  color: #333333;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_scaffolding\.scss}line{font-family:\000032}}
 table th {
@@ -17,86 +17,34 @@ table td.numeric,
 table th.numeric {
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_borders\.scss}line{font-family:\0000314}}
-table th, table td {
-  border-right: 1px solid #4f2800;
-  border-bottom: 1px solid #4f2800;
-  border-left-width: 0px;
-  border-top-width: 0px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000314}}
+table thead {
+  border-bottom: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_borders\.scss}line{font-family:\0000321}}
-table th:last-child, table th.last, table td:last-child, table td.last {
-  border-right-width: 0px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_borders\.scss}line{font-family:\0000329}}
-table tbody tr:last-child th, table tbody tr:last-child td, table tfoot tr:last-child th, table tfoot tr:last-child td {
-  border-bottom-width: 0px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_borders\.scss}line{font-family:\0000332}}
-table tbody tr.last th, table tbody tr.last td, table tfoot tr.last th, table tfoot tr.last td {
-  border-bottom-width: 0px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_borders\.scss}line{font-family:\000034}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000318}}
 table thead th {
-  border-bottom: 2px solid black;
+  border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_borders\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000321}}
+table thead tr {
+  border: 1px solid #fbd850;
+  border-bottom: none;
+  line-height: 3.3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000328}}
+table tr {
+  border: 1px solid #dddddd;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000331}}
+table tr:hover {
+  border: 1px solid #FBCB09;
+  background: url("../images/ui-bg_glass_100_fdf5ce_1x400.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000336}}
+table tfoot {
+  line-height: 1.3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000340}}
 table tfoot th, table tfoot td {
-  border-top: 2px solid black;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_borders\.scss}line{font-family:\0000310}}
-table th:first-child {
-  border-right: 2px solid black;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_alternating-rows-and-columns\.scss}line{font-family:\000032}}
-table th {
-  background-color: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_alternating-rows-and-columns\.scss}line{font-family:\000034}}
-table th.even, table th:nth-child(2n) {
-  background-color: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_alternating-rows-and-columns\.scss}line{font-family:\000038}}
-table tr.odd td, table tr:nth-child(2n+1) td {
-  background-color: #ff8e1c;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_alternating-rows-and-columns\.scss}line{font-family:\0000310}}
-table tr.odd td.even, table tr.odd td:nth-child(2n), table tr:nth-child(2n+1) td.even, table tr:nth-child(2n+1) td:nth-child(2n) {
-  background-color: #ff8e1c;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_alternating-rows-and-columns\.scss}line{font-family:\0000314}}
-table tr.even td {
-  background-color: #ed801c;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_alternating-rows-and-columns\.scss}line{font-family:\0000316}}
-table tr.even td.even, table tr.even td:nth-child(2n) {
-  background-color: #ed801c;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_alternating-rows-and-columns\.scss}line{font-family:\0000319}}
-table tfoot th, table tfoot td {
-  background-color: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_alternating-rows-and-columns\.scss}line{font-family:\0000321}}
-table tfoot th.even, table tfoot th:nth-child(2n), table tfoot td.even, table tfoot td:nth-child(2n) {
-  background-color: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000316}}
-table a {
-  color: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000318}}
-table a:visited {
-  color: #cccccc;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000321}}
-table a:focus {
-  color: #909fcc;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000324}}
-table a:hover {
-  color: #2c2c2c;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000327}}
-table a:active {
-  color: #2b2b2b;
+  border-top: 1px solid #fbd850;
 }

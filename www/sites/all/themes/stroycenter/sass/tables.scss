@@ -3,18 +3,48 @@
 
 table {
 
-  $table-color: #FF8E1C;
+  $table-color: #eeeeee;
 
   @include table-scaffolding;
 
-  @include inner-table-borders(1px , darken($table-color, 40%));
 
-  @include outer-table-borders(2px);
+  color: #333333;
 
-  @include alternating-rows-and-columns(#ed801c, $table-color, 0);
+
+  thead {
+      $color : #FBD850;
+      $width : 1px;
+    border-bottom: none;
+      th {
+          border: none;
+      }
+    tr {
+      border: $width solid $color ;
+      border-bottom: none;
+      line-height: 3.3em;
+    }
+  }
+
+  tr {
+    border: 1px solid #dddddd;
+  }
+  tr:hover {
+    border:1px solid #FBCB09;
+    background: url("../images/ui-bg_glass_100_fdf5ce_1x400.png");
+  }
+
+  tfoot {
+    $color : #FBD850;
+    $width : 1px;
+    line-height: 1.3em;
+    th, td {
+
+      border-top : $width solid  $color ; } }
+
+  //@include alternating-rows-and-columns(#ed801c, $table-color, 0);
 
   a {
-    @include link-colors(#ffffff, #2c2c2c, #2b2b2b, #ccc, #909fcc);
+    //@include link-colors(#ffffff, #2c2c2c, #2b2b2b, #ccc, #909fcc);
   }
 
 }
