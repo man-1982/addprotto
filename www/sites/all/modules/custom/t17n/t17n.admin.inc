@@ -122,7 +122,7 @@ function t17n_get_parents_tree($vid) {
  * Get childs for terms tree
  * @param $tree
  */
-function t17_get_childs_tree($tree, $depth = 0) {
+function t17n_get_childs_tree($tree, $depth = 0) {
   $tree_parent = array();
   if(is_array($tree)) {
 
@@ -130,12 +130,10 @@ function t17_get_childs_tree($tree, $depth = 0) {
       $tree_parent[$key] = $parent_term;
       $childs = taxonomy_get_children($parent_term->tid, $parent_term->vid);
 
-      $tree_parent[$key]->t17_depth = $depth;
+      $tree_parent[$key]->t17n_depth = $depth;
       if (!empty($childs)) {
-        $tree_parent[$key]->childs = t17_get_childs_tree($childs, ++$depth);
-      }
-    else {
-
+         $childs_depth = $tree_parent[$key]->t17_depth +1;
+        $tree_parent[$key]->childs = t17n_get_childs_tree($childs, $childs_depth );
       }
 
     }
@@ -146,12 +144,6 @@ function t17_get_childs_tree($tree, $depth = 0) {
   return $tree_parent;
 }
 
-function t17_get_level($hierarchical_tree, $level = 0) {
-    $deep = array();
-  foreach($hierarchical_tree as $key => $terms) {
-      $hierarchical_tree[$key]->depth = 0;
-  }
-}
 
 /**
  * Get hierarctical tree with childs
@@ -160,7 +152,7 @@ function t17n_get_hierarchical_tree($vid) {
 
   $parent_tree = t17n_get_parents_tree($vid);
 
-  $hierarchical_tree =  t17_get_childs_tree($parent_tree);
+  $hierarchical_tree =  t17n_get_childs_tree($parent_tree);
 
   return $hierarchical_tree;
 }
@@ -169,9 +161,29 @@ function t17n_get_hierarchical_tree($vid) {
  * @param $voc
  */
 function theme_t17n_hierarchical_tree($variables) {
+  drupal_add_js(libraries_get_path('jquery.ui.accordion.js'));
+
+  drupal_add_css(drupal_get_path('module', 't17n') . '/css/ui-lightness/jquery-ui-1.8.23.custom.css');
+
+
   $hierarchical_tree = $variables['hierarchical_tree'];
   $attributes = $variables['attributes'];
-  $output = _theme_t17n_hierarchical_tree($hierarchical_tree, $attributes);
+  $delta = isset($variables['delta'])? $variables['delta'] : 0;
+  if (is_array($hierarchical_tree)&& !empty($hierarchical_tree)) {
+    $output = '<div id="t17-accordion-'. $delta .'" class="t17-accordion-'. $delta .'">';
+    $output .= _theme_t17n_hierarchical_tree($hierarchical_tree, $attributes);
+    $output .='</div>';
+  }
+
+  $settings['accordion'] = array(
+    'selector' =>  '#t17-accordion-' . $delta,
+  );
+
+  drupal_add_js(array('t17n' => $settings),array('type' => 'setting'));
+
+  drupal_add_js(drupal_get_path('module', 't17n').'/js/t17n-accordion.js');
+
+
  return $output;
 }
 
@@ -190,15 +202,25 @@ function _theme_t17n_hierarchical_tree($hierarchical_tree, $attributes = array()
 
   foreach($hierarchical_tree as $key => $term) {
     $attributes_term = isset($term->attributes) ? $term->attributes : array();
+    $attributes_term['class'][] = 't17n-level-' . $term->t17n_depth;
+    // Headers for accordion
      $output .= '<li' .drupal_attributes($attributes_term) . '>';
 
       $output .= l($term->name .' - ' . $term->tid, 'taxonomy/term/' . $term->tid);
 
-        if(is_array($term->childs)&&!empty($term->childs)) {
-          $childs_array = $term->childs;
-           $output .= _theme_t17n_hierarchical_tree($childs_array, array('class' => array('child'))) . "\n";
-        }
     $output .= "</li>\n";
+    //end header for accordion
+
+    // body of accordion
+    $output .= '<div class="t17-body-accordion">'. l($term->name .' - ' . $term->tid, 'taxonomy/term/' . $term->tid) ;
+
+    if(is_array($term->childs)&&!empty($term->childs)) {
+      $childs_array = $term->childs;
+      $output .= _theme_t17n_hierarchical_tree($childs_array, array('class' => array('child')))  . "\n";
+    }
+    $output .="</div>"  ;
+    //end body of accordion
+
   }
   $output .= "</ul>\n";
   return $output;
