@@ -26,10 +26,12 @@ ul li.collapsed {
 }
 ul li.leaf {
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *list-style-image: url(../images/menu-leaf.png);
+    *list-style-image: url(../images/ui-icons_ffd27a_256x240-2-2.png);
   }
-  list-style-image: inline-image("menu-leaf.png");
+  list-style-image: inline-image("ui-icons_ffd27a_256x240-2-2.png");
   list-style-type: square;
+  list-style-position: outside;
+  margin-left: -10px;
 }
 
 /*
