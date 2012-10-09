@@ -1,0 +1,28 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\000034}}
+.search-wrapper {
+  @incude single-box-shadow(0 0 5px rgba(0, 0, 0, 0.5) );
+  position: relative;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\000038}}
+.search-wrapper .search-input {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.5em;
+  font-size: 87%;
+  padding: 3px 15px 3px 2px;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000319}}
+.search-wrapper .search-submit {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  right: 11px;
+  top: 1px;
+}

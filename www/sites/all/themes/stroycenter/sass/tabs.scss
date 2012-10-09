@@ -13,7 +13,9 @@
 
 // Some variables to make altering the styling easier.
 $tabs-container-bg: #fff;
-$tabs-border: #bbb;
+$tabs-border: #FBCB09;
+$tabs-background-color:#eeeeee ;
+$tabs-line-heights: 1.5em;
 
 
 /*
@@ -35,11 +37,11 @@ ul.secondary {
   }
 
   a {
-    border: 1px solid #e9e9e9;
+    border: 1px solid $tabs-background-color;
     border-right: 0;
     border-bottom: 0;
     display: block;
-    line-height: 1.5em;
+    line-height: $tabs-line-heights;
     text-decoration: none;
   }
 }
@@ -51,36 +53,38 @@ ul.secondary {
 ul.primary {
   li {
     @include border-top-radius(4px);
-    @include single-text-shadow(#fff, 1px, 1px, 0);
-    border: 1px solid $tabs-border;
-    border-bottom: 0;
+    //@include single-text-shadow(#fff, 1px, 1px, 0);
+    //border: 1px solid $tabs-border;
+    //border-bottom: 0;
+    background: url("../images/ui-bg_glass_100_f6f6f6_1x400.png") repeat-x scroll 50% 50% #F6F6F6;
+    border: 1px solid #CCCCCC;
+    color: #1C94C4;
     margin: 0.5em 0 0 3px; /* LTR */
   }
   li.active {
-    border-bottom: 1px solid $tabs-container-bg;
+    background: url("../images/ui-bg_glass_100_fdf5ce_1x400.png") repeat-x scroll 50% 50% #FDF5CE;
+    border: 1px solid #FBCB09;
+    color: #FF7804;
+    font-weight: bold;
     margin-bottom: -1px; /* Overlap the ul's border. */
   }
 
   a:link,
   a:visited {
     @include border-top-radius(4px);
-    @include transition(background-color 0.3s);
-    color: #333;
-    background-color: #dedede;
+    color: #1C94C4;
     letter-spacing: 1px;
     padding: 0 1em;
     text-align: center;
   }
   a:hover,
   a:focus {
-    background-color: #e9e9e9;
-    border-color: #f2f2f2;
+    color: #FF7804;
   }
   a.active {
+    color: #EB8F00;
     background-color: transparent;
-    @include filter-gradient(rgba(#e9e9e9, 1), rgba(#e9e9e9, 0));
-    @include background-image(linear-gradient(rgba(#e9e9e9, 1), rgba(#e9e9e9, 0)));
-    border-color: #fff;
+    line-height: $tabs-line-heights;
   }
 }
 

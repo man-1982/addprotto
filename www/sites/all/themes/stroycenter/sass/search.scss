@@ -1,10 +1,26 @@
 @import "base";
+@import "compass/css3";
 
 .search-wrapper {
+  @incude single-box-shadow(0 0 5px rgba(0, 0, 0, 0.5) );
+  position: relative;
+  @include clearfix;
   .search-input {
+    @include border-radius(10px);
+
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5em;
+    font-size: 87%;
+    padding: 3px 15px 3px 2px;
+    width: 100%;
 
   }
   .search-submit {
-
+    position: absolute;
+       margin: 0px;
+    padding: 0px;
+    right: 11px;
+    top: 1px;
   }
 }

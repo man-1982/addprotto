@@ -28,12 +28,13 @@
  *
  * @see template_preprocess_search_block_form()
  */
-$path_image_loop = drupal_get_path('theme', 'stroycenter') . '/images/lop.jpg'
+$path_image_loop = url(drupal_get_path('theme', 'stroycenter') . '/images/lop.jpg', array('absolute' => TRUE));
 ?>
 <div class="container-inline">
     <div class ="search-wrapper">
-        <input type="text" class="search-input" maxlength="128" size="15" value="" name="search_block_form" id="search-block-form-input">
+        <input type="text" class="search-input" maxlength="128" size="25" value="" name="search_block_form" id="search-block-form-input">
         <input type="image" class="search-submit" src="<?php print $path_image_loop ?>" align="absmiddle" id="submit-button-search">
     </div>
   <?php print $search['hidden']; ?>
 </div>
+
