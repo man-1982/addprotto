@@ -100,6 +100,7 @@ scripts[] = js/script.js
 
 regions[header]         = Header
 regions[navigation]     = Navigation bar
+regions[preface_top]     = Preface Top
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content

@@ -126,6 +126,10 @@
 
     </div><!-- /#navigation -->
 
+  <div id= "preface-top">
+    <?php print render($page['preface_top']); ?>
+  <div>
+
 
     <div id="main">
 
