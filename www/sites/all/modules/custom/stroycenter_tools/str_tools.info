@@ -1,0 +1,6 @@
+name = Stroycenter Tools
+description = Tools for stroycenter
+core = 7.x
+package = Stroycenter
+version = 7.x-1.0
+features[features_api][] = api:1

@@ -1,0 +1,113 @@
+<?php
+/**
+ * Created by JetBrains PhpStorm.
+ * User: akochergin
+ * Date: 13.10.12
+ * Time: 20:45
+ * To change this template use File | Settings | File Templates.
+ */
+
+function str_tools_menu() {
+  $items['user-login/%ctools_js/login'] = array(
+    'title' => 'Login',
+    'page callback' => 'str_tools_ajax_login',
+    'page arguments' => array(1),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  $items['user-login/%ctools_js/register'] = array(
+    'title' => 'Register',
+    'page callback' => 'str_tools_ajax_register',
+    'page arguments' => array(1),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ *
+ */
+function str_tools_ajax_login($js = NULL) {
+  if (!$js) {
+    return drupal_get_form('user_login');
+  }
+
+  ctools_include('modal');
+  ctools_include('ajax');
+  $form_state = array(
+    'title' => t('Войти'),
+    'ajax' => TRUE,
+  );
+
+  $output = ctools_modal_form_wrapper('user_login', $form_state);
+
+  if (!empty($form_state['executed'])) {
+    // We'll just overwrite the form output if it was successful.
+    $output = array();
+    $output[] = ctools_ajax_command_reload();
+  }
+  print ajax_render($output);
+  exit;
+
+}
+
+/**
+ *
+ * @param null $js
+ */
+function str_tools_ajax_register($js = NULL) {
+
+  $message = <<<HTML
+Спасибо за регистрацию на нашем портале....
+К вам на почту придет письмо для подвтверждени регистрации.
+Вы можете закрыть окно.
+HTML;
+
+
+  if (!$js) {
+    return drupal_get_form('user_register_form');
+  }
+
+  ctools_include('modal');
+  ctools_include('ajax');
+  $form_state = array(
+    'title' => t('Регистрация'),
+    'ajax' => TRUE,
+  );
+
+  $output = ctools_modal_form_wrapper('user_register_form', $form_state);
+
+  if (!empty($form_state['executed'])) {
+    // We'll just overwrite the form output if it was successful.
+    $output = array();
+    $output[] = ctools_modal_command_display(t('Реистрация выполнена'), $message);
+//    $output[] = ctools_ajax_command_reload();
+  }
+  print ajax_render($output);
+  exit;
+
+}
+
+/**
+ * @param $vars
+ */
+function str_tools_preprocess_page(&$vars) {
+
+  global $user;
+  $user_login = l(t('Вход'), 'user-login/nojs/login', array('attributes' => array('class' => 'user-login-link')));
+  $user_register = l(t('Региcтрация'), 'user-login/nojs/login', array('attributes' => array('class' => 'user-login-link')));
+
+  // For usability's sake, avoid showing two login forms on one page.
+  if (!$user->uid && !(arg(0) == 'user' && !is_numeric(arg(1)))) {
+    $variables['items'] = array($user_login, $user_register);
+    $variables['type'] = 'ul';
+    $variables['attributes'] = array('class' => 'wrapper-user-login');
+    $output = theme('item_list', $variables);
+    $vars['str_tools_user_login'] = $output;
+
+  }
+
+}
+
