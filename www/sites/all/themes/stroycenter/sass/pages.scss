@@ -8,6 +8,7 @@
  */
 
 @import "base";
+@import "compass/utilities/general/clearfix"; // Better than Drupal's clearfix.
 
 
 /*
@@ -70,6 +71,11 @@ a{
 
 #name-and-slogan { /* Wrapper for website name and slogan */
   float: left;
+}
+
+#preface-top {
+  @include clearfix;
+  clear: both;
 }
 
 #site-name { /* The name of the website */

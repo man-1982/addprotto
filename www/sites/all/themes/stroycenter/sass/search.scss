@@ -1,5 +1,6 @@
 @import "base";
 @import "compass/css3";
+@import "compass/css3/pie";
 
 .search-wrapper {
   @incude single-box-shadow(0 0 5px rgba(0, 0, 0, 0.5) );
@@ -20,7 +21,7 @@
     position: absolute;
        margin: 0px;
     padding: 0px;
-    right: 11px;
+    right: 28px;
     top: 1px;
   }
 }

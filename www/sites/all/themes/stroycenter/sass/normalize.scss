@@ -413,6 +413,21 @@ ol,
 ul,
 .item-list ul /* Drupal override */ {
   padding: 0 0 0 $indent-amount; /* LTR */
+  list-style: none;
+  list-style-image: none;
+}
+
+.item-list ul.wrapper-user-login {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+}
+
+.item-list ul.wrapper-user-login li{
+  float: left;
+  padding-left: 10px;
+  display: block;
+
 }
 
 /*

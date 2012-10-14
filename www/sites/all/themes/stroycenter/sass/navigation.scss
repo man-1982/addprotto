@@ -4,6 +4,7 @@
  */
 
 @import "base";
+@import "compass/utilities/general/clearfix";
 
 
 /*
@@ -48,6 +49,9 @@ li a.active {
 
 #navigation {
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
+  width: 90%;
+  clear: both;
+  margin: 1em auto;
 
   .block {
     margin-bottom: 0;
@@ -62,16 +66,18 @@ li a.active {
   ul.menu { /* Menu block links */
     margin: 0 auto;
     padding: 0;
+    float: left;
+    position: relative;
+    left: 50%;
     text-align: left; /* LTR */
-    display: block;
-    width: $zen-grid-width - 10;
 
     li { /* A simple method to get navigation links to appear in one line. */
           float: left; /* LTR */
-          padding: 0 10px 0 0; /* LTR */
           list-style-type: none;
           list-style-image: none;
-          padding-top: 260px;
+          padding: 49px 10px 0 0;
+          right: 50%;
+          position: relative;
 
     }
     li.menu-with-logo {
