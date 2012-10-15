@@ -143,6 +143,14 @@ h3.title { /* Comment title */
   margin: 0;
 }
 
+h1.title {
+  background: url(../images/h1_baground.jpg) no-repeat;
+  display: block;
+  height: 80px;
+  color: #EB8F00;
+  padding-top: 4px;
+}
+
 tr.even { /* Some tables have rows marked even or odd. */
   /* background-color: #eee; */ /* Drupal core uses a #eee background */
 }

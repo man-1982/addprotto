@@ -1,28 +1,32 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\000035}}
-.search-wrapper {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\000037}}
+#search-block-form {
+  width: 385px;
+  float: right;
   @incude single-box-shadow(0 0 5px rgba(0, 0, 0, 0.5) );
   position: relative;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\000039}}
-.search-wrapper .search-input {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000315}}
+#search-block-form .search-input {
+  width: 350px;
   margin: 0px;
   padding: 0px;
   line-height: 1.5em;
   font-size: 87%;
   padding: 3px 15px 3px 2px;
-  width: 100%;
+  display: block;
+  border: 1px solid #1C94C4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000320}}
-.search-wrapper .search-submit {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000326}}
+#search-block-form .search-input:hover {
+  display: block;
+  border: 1px solid #EB8F00;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000330}}
+#search-block-form .search-submit {
+  margin: 0;
+  padding: 0;
   position: absolute;
-  margin: 0px;
-  padding: 0px;
-  right: 28px;
-  top: 1px;
+  right: 0px;
+  top: 5px;
 }

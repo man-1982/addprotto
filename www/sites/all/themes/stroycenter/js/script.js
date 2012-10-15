@@ -12,8 +12,19 @@
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 (function ($, Drupal, window, document, undefined) {
 
+  Drupal.behaviors.stroycenterEqualheights = {
+    attach: function (context, settings) {
+      if (jQuery().equalHeights) {
+        $(".column").equalHeights();
+      }
 
-// Place your code here.
+
+      if(jQuery().corner) {
+        $("#search-block-form .search-input").corner('10px');
+      }
+
+    }
+  };
 
 
 })(jQuery, Drupal, this, this.document);

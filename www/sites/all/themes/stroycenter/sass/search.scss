@@ -2,26 +2,36 @@
 @import "compass/css3";
 @import "compass/css3/pie";
 
-.search-wrapper {
+$search-width: 385px;
+
+#search-block-form {
+  width: $search-width;
+  float: right;
+
   @incude single-box-shadow(0 0 5px rgba(0, 0, 0, 0.5) );
   position: relative;
   @include clearfix;
-  .search-input {
-    @include border-radius(10px);
 
+  .search-input {
+    width :$search-width - 35;
     margin: 0px;
     padding: 0px;
     line-height: 1.5em;
     font-size: 87%;
     padding: 3px 15px 3px 2px;
-    width: 100%;
+    display: block;
+    border: 1px solid #1C94C4;
+  }
 
+  .search-input:hover {
+    display: block;
+    border: 1px solid #EB8F00;
   }
   .search-submit {
+    margin: 0;
+    padding: 0;
     position: absolute;
-       margin: 0px;
-    padding: 0px;
-    right: 28px;
-    top: 1px;
+    right: 0px;
+    top: 5px;
   }
 }

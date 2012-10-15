@@ -1,6 +1,7 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\000034}}
 table {
   color: #333333;
+  width: 95%;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_scaffolding\.scss}line{font-family:\000032}}
 table th {

@@ -80,6 +80,8 @@ stylesheets[all][] = css/print.css
 ; Optionally add some JavaScripts to your theme.
 
 scripts[] = js/script.js
+scripts[] = js/jquery.equalheights.js
+scripts[] = js/jquery.corner.js
 
 
 
