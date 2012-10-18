@@ -289,12 +289,33 @@ span.field-label {
 /*
  * Page bottom
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003262}}
-.region-bottom {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003263}}
+.wrapper-page-bottom {
+  border-top: 1px solid wrapper-page-bottom #ebb783;
+  background-image: url("../images/page-bottom-bg.png");
+  background-repeat: repeat-x;
+  background-color: #ee7f01;
+  padding-top: 2em;
   /* Wrapper for any blocks placed in the page bottom region */
 }
-
-.description {
-  color: #3587B3;
-  font-size: 75%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003271}}
+.wrapper-page-bottom .region-bottom h2 {
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003275}}
+.wrapper-page-bottom .region-bottom ul li {
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003280}}
+.wrapper-page-bottom .region-bottom a {
+  color: #fff4f4;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003283}}
+.wrapper-page-bottom .region-bottom a:hover {
+  color: #fcd88a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003288}}
+.wrapper-page-bottom .region-bottom .block {
+  display: inline-block;
 }

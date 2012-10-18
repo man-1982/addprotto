@@ -234,7 +234,9 @@ span.field-label { /* The inline field label used by the Fences module */
  * Remember to NOT add padding or margin to your .region-sidebar-first
  * (see the layout.css file.)
  */
+.sidebars {
 
+}
 .region-sidebar-first {
 }
 
@@ -258,6 +260,38 @@ span.field-label { /* The inline field label used by the Fences module */
 /*
  * Page bottom
  */
+.wrapper-page-bottom {
+  border-top: 1px solid wrapper-page-bottom #ebb783;
+  background-image: url('../images/page-bottom-bg.png');
+  background-repeat: repeat-x;
+  background-color: #ee7f01;
+  padding-top: 2em;
+    /* Wrapper for any blocks placed in the page bottom region */
+  .region-bottom {
+    h2 {
+      color: #fff;
+    }
+    ul {
+      li {
 
-.region-bottom { /* Wrapper for any blocks placed in the page bottom region */
+        list-style: none;
+      }
+    }
+    a {
+      color: #fff4f4;
+      text-decoration: none;
+      &:hover {
+        color: #fcd88a;
+      }
+    }
+
+    .block {
+      display: inline-block;
+      //float: left;
+    }
+
+
+  }
+
 }
+

@@ -15,12 +15,15 @@
   Drupal.behaviors.stroycenterEqualheights = {
     attach: function (context, settings) {
       if (jQuery().equalHeights) {
-        $(".column").equalHeights();
+//        $(".column").equalHeights();
+        var main_height = $('#main').height();
+        $('.region-sidebar-second').height(main_height);
       }
 
 
       if(jQuery().corner) {
         $("#search-block-form .search-input").corner('10px');
+//        $(".wrapper-page-bottom").corner("top 40px" );
       }
 
     }

@@ -173,4 +173,4 @@
 
 </div><!-- /#page -->
 
-<?php print render($page['bottom']); ?>
+<div class="wrapper-page-bottom"><?php print render($page['bottom']); ?>  <div>
