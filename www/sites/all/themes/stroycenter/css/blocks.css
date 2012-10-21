@@ -26,139 +26,153 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000324}}
 .block h2.block-title {
   /* Block title */
+  font-size: 1em;
+  line-height: 1em;
+  color: #EB8F00;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000332}}
+#block-t17n-t17n-voc-block-2 h2 {
+  color: #EB8F00;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000335}}
+#block-t17n-t17n-voc-block-2 ul {
+  padding: 0px;
+  font-size: 0.8em;
+  margin-top: 0.8em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000343}}
 #block-aggregator-category-1 {
   /* Block for the latest news items in the first category */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000346}}
 #block-aggregator-feed-1 {
   /* Block for the latest news items in the first feed */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000349}}
 #block-block-1 {
   /* First block created with "Add block" link */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000352}}
 #block-blog-recent {
   /* "Recent blog posts" block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000355}}
 #block-book-navigation {
   /* "Book navigation" block for the current book's table of contents */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000358}}
 #block-comment-recent {
   /* "Recent comments" block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000361}}
 #block-forum-active {
   /* "Active forum topics" block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000364}}
 #block-forum-new {
   /* "New forum topics" block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000367}}
 #block-locale-language {
   /* Language switcher block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000370}}
 #block-menu-menu-NAME {
   /* Custom menu block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000373}}
 #block-node-recent {
   /* "Recent content" block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000376}}
 #block-node-syndicate {
   /* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000379}}
 #block-poll-recent {
   /* "Most recent poll" block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000382}}
 #block-profile-author-information {
   /* "Author information" block for the profile of the page's author */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000385}}
 #block-search-form {
   /* "Search form" block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000388}}
 #block-shortcut-shortcuts {
   /* "Shortcuts" block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000391}}
 #block-statistics-popular {
   /* "Popular content" block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000394}}
 #block-system-main-menu {
   /* "Main menu" block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000397}}
 #block-system-management {
   /* "Management" block for Drupal management menu */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\00003100}}
 #block-system-navigation {
   /* "Navigation" block for Drupal navigation menu */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\00003103}}
 #block-system-user-menu {
   /* "User menu" block for Drupal user menu */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\00003106}}
 #block-system-help {
   /* "System help" block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\00003109}}
 #block-system-main {
   /* "Main page content" block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\00003112}}
 #block-system-powered-by {
   /* "Powered by Drupal" block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\00003115}}
 #block-user-login {
   /* "User login form" block */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\00003118}}
 #block-user-new {
   /* "Who's new" block for a list of the newest users */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/blocks\.scss}line{font-family:\00003121}}
 #block-user-online {
   /* "Who's online" block for a list of the online users */
 }

@@ -51,7 +51,7 @@ li a.active {
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
   width: 90%;
   clear: both;
-  margin: 1em auto;
+  margin: 0.2em auto;
 
   .block {
     margin-bottom: 0;
@@ -95,9 +95,113 @@ li a.active {
 
 #main-menu {
 
-  //li.menu-with-logo {
-  //  position: relative;
-  //}
+  $color-a: #000000;
+  $color-a-active: #EE7F01;
+  $color-a-hover: #fffcf6;
+  $bg-color-ul-li:transparent;
+
+  $bg-color-ul-li-ul:#EE7F01;
+
+  $bg-color-ul-li-hover:#ee7f01;
+  $border-color: #ededed;
+
+ ul.nice-menu {
+   list-style: none outside none;
+   border: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   z-index: 5;
+   li {
+     position: relative;
+     border: none;
+     background-color: $bg-color-ul-li;
+     display: block;
+     padding-left: 8px;
+
+     &:hover {
+       background-color: $bg-color-ul-li-hover;
+       border-bottom: 1px solid  $border-color;
+     }
+
+   }
+   li.menuparent {
+     background: inline-image('../images/menu-expanded.png' ,'image/png') right center no-repeat;
+     *background: inline-image('../images/menu-expanded.png' ,'image/png') right center no-repeat;
+     &:hover {
+       border-bottom: 1px solid  $border-color;
+       background: inline-image('../images/menu-expanded-white.png' ,'image/png') $bg-color-ul-li-hover right center no-repeat;
+       *background: inline-image('../images/menu-expanded-white.png' ,'image/png') $bg-color-ul-li-hover right center no-repeat;
+     }
+     li.menuparent {
+       background: inline-image('../images/menu-collapsed-white.png','image/png') $bg-color-ul-li-ul right center no-repeat;
+       *background: inline-image('../images/menu-collapsed-white.png','image/png') $bg-color-ul-li-ul right center no-repeat;
+       &:hover {
+         background-color: $bg-color-ul-li-hover;
+         border-bottom: 1px solid  $border-color;
+       }
+     }
+   }
+
+
+   a {
+     display: block;
+     color: $color-a;
+
+     padding: 0.3em 5px 0.3em 0px;
+     margin-right: 7px;
+     text-decoration: none;
+     &:hover {
+       color: $color-a-hover;
+       //background: url('../images/main-menu-bg-right.png')  $bg-color-ul-li-hover scroll 100% 0 repeat-y;
+     }
+
+   }
+   a.active {
+     color: $color-a-active;
+     &:hover {
+       color: $color-a-hover;
+     }
+   }
+   ul {
+     position: absolute;
+     visibility: hidden;
+     top: 1.8em;
+     right: -1px; /* LTR */
+     border: none;
+     margin-right: 0; /* LTR */
+
+      li {
+        display: block;
+        width: 12.5em;
+        background-color: $bg-color-ul-li-ul;
+      }
+   }
+
+
+   &:after {
+     content: ".";
+     display: block;
+     height: 0;
+     clear: both;
+     visibility: hidden;
+   }
+ }
+
+
+  ul.nice-menu-down li {
+    border: none;
+
+    ul {
+      li {
+        ul {
+          left: 12.5em; /* LTR */
+          top: -1px;
+        }
+      }
+    }
+  }
+
 
 
 }

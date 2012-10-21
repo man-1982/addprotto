@@ -15,7 +15,12 @@ body {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000326}}
+.description {
+  font-size: 0.85em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000332}}
 a {
   color: #1c94c4;
 }
@@ -32,11 +37,11 @@ a:active {
  * The skip-link link will be completely hidden until a user tabs to the link.
  * See the element-focusable rule in system.base.css.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000342}}
 #skip-link {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000346}}
 #skip-link a,
 #skip-link a:visited {
   display: block;
@@ -50,58 +55,62 @@ a:active {
 /*
  * Header
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000366}}
 #logo {
   /* Wrapping link for logo */
   float: left;
-  /* LTR */
+  left: 50%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000373}}
 #logo img {
+  position: relative;
+  right: 50%;
   vertical-align: bottom;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000380}}
 #name-and-slogan {
   /* Wrapper for website name and slogan */
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000384}}
 #preface-top {
   overflow: hidden;
   clear: both;
+  margin: 0 40px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000390}}
 #site-name {
   /* The name of the website */
   margin: 0;
   font-size: 2em;
   line-height: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000396}}
 #site-name a:link,
 #site-name a:visited {
   color: #000;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003102}}
 #site-name a:hover,
 #site-name a:focus {
   text-decoration: underline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003107}}
 #site-slogan {
   /* The slogan (or tagline) of a website */
   margin: 0;
   font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003112}}
 .region-header {
   /* Wrapper for any blocks placed in the header region */
   clear: both;
@@ -114,16 +123,16 @@ a:active {
 /*
  * Content
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003133}}
 .breadcrumb {
   /* The path to the current page in the form of a list of links */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003125}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003134}}
 .breadcrumb ol {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003138}}
 .breadcrumb li {
   display: inline;
   list-style-type: none;
@@ -131,7 +140,7 @@ a:active {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003151}}
 h1.title,
 h2.node-title,
 h2.block-title,
@@ -142,46 +151,48 @@ h3.title {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003155}}
 h1.title {
-  background: url(../images/h1_baground.jpg) no-repeat;
-  display: block;
-  height: 80px;
+  background: url('data:"image/png";base64,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') no-repeat scroll 0 0 transparent;
+  *background: url('data:"image/png";base64,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') no-repeat scroll 0 0 transparent;
   color: #EB8F00;
-  padding-top: 4px;
+  display: block;
+  height: 72px;
+  padding-left: 11px;
+  padding-top: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003154}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003165}}
 tr.even {
   /* Some tables have rows marked even or odd. */
   /* background-color: #eee; */
   /* Drupal core uses a #eee background */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003169}}
 tr.odd {
   /* background-color: #eee; */
   /* Drupal core uses a #eee background */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003162}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003173}}
 div.messages {
   /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
   margin: 1.5em 0;
   /* Drupal core uses "6px 0" margin */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003176}}
 div.messages ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003182}}
 div.status {
   /* Normal priority messages */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003186}}
 div.warning,
 tr.warning {
   /* Medium priority messages */
@@ -189,53 +200,53 @@ tr.warning {
   /* Drupal core uses: 1px solid #f0c020 */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003180}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003191}}
 div.error,
 tr.error {
   /* High priority messages. See also the .error declaration below. */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003183}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003194}}
 .error {
   /* Errors that are separate from div.messages status messages. */
   /* color: #e55; */
   /* Drupal core uses a #e55 background */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003187}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003198}}
 .warning {
   /* Warnings that are separate from div.messages status messages. */
   /* color: #e09010; */
   /* Drupal core uses a #e09010 background */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003191}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003202}}
 .tabs {
   /* See also the tabs.css file. */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003205}}
 .region-help {
   /* Help text on a page */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003197}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003208}}
 .more-help-link {
   /* Link to more help */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003211}}
 .region-content {
   /* Wrapper for the actual page content */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003203}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003214}}
 ul.inline {
   /* List of links generated by theme_links() */
   display: inline;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003218}}
 ul.inline li {
   display: inline;
   list-style-type: none;
@@ -243,30 +254,30 @@ ul.inline li {
   /* LTR */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003224}}
 span.field-label {
   /* The inline field label used by the Fences module */
   padding: 0 1em 0 0;
   /* LTR */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003217}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003228}}
 .item-list .pager {
   /* A list of page numbers when more than 1 page of content is available */
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003220}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003231}}
 .item-list .pager li {
   /* Each page number in the pager list */
   padding: 0 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003225}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003236}}
 .feed-icon {
   /* The link to the RSS or Atom feed for the current list of content */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003228}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003239}}
 .more-link {
   /* Aggregator, blog, and forum more link */
 }
@@ -289,33 +300,67 @@ span.field-label {
 /*
  * Page bottom
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003263}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003274}}
 .wrapper-page-bottom {
   border-top: 1px solid wrapper-page-bottom #ebb783;
+  vertical-align: baseline;
   background-image: url("../images/page-bottom-bg.png");
   background-repeat: repeat-x;
   background-color: #ee7f01;
   padding-top: 2em;
+  margin-top: 1em;
   /* Wrapper for any blocks placed in the page bottom region */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003271}}
-.wrapper-page-bottom .region-bottom h2 {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003283}}
+.wrapper-page-bottom #footer-inner {
+  margin-right: auto;
+  margin-left: auto;
+  width: 960px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003288}}
+.wrapper-page-bottom #footer-inner .region-bottom {
+  clear: both;
+  display: inline;
+  float: left;
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 940px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003298}}
+.wrapper-page-bottom #footer-inner .region-bottom h2 {
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003275}}
-.wrapper-page-bottom .region-bottom ul li {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003302}}
+.wrapper-page-bottom #footer-inner .region-bottom ul li {
   list-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003280}}
-.wrapper-page-bottom .region-bottom a {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003307}}
+.wrapper-page-bottom #footer-inner .region-bottom a {
   color: #fff4f4;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003283}}
-.wrapper-page-bottom .region-bottom a:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003310}}
+.wrapper-page-bottom #footer-inner .region-bottom a:hover {
   color: #fcd88a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003288}}
-.wrapper-page-bottom .region-bottom .block {
-  display: inline-block;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003315}}
+.wrapper-page-bottom #footer-inner .region-bottom .block {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003329}}
+.clear-block {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/pages\.scss}line{font-family:\00003332}}
+.clear-block:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
 }

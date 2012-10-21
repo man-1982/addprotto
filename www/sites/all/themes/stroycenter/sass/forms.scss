@@ -4,6 +4,11 @@
  */
 
 @import "base";
+@import "compass/css3/border-radius";
+
+$label-color: #1C94C4;
+
+$description-color: #68696B;
 
 
 .form-item { /* Wrapper for a form element (or group of form elements) and its label */
@@ -18,6 +23,7 @@
   label { /* The label for a form element */
     display: block;
     font-weight: bold;
+    color: $label-color;
   }
 
   label.option { /* The label for a radio button or checkbox */
@@ -30,7 +36,8 @@
   }
 
   .description { /* The descriptive help text (separate from the label) */
-    font-size: 0.85em;
+    font-size: 0.7em;
+    color: $description-color;
   }
 
   .form-checkboxes & ,
@@ -40,6 +47,21 @@
 }
 
 .form-submit { /* The submit button */
+  background: url("images/ui-bg_glass_100_f6f6f6_1x400.png") repeat-x scroll 50% 50% #F6F6F6;
+  padding: 7px 20px 8px;
+  text-transform: capitalize;
+  vertical-align: middle;
+  border: 1px solid #CCCCCC;
+  color: #1C94C4;
+
+  font-weight: bold;
+  @include border-radius(4px);
+  &:hover {
+    background: url("images/ui-bg_glass_100_fdf5ce_1x400.png") repeat-x scroll 50% 50% #FDF5CE;
+    border: 1px solid #FBCB09;
+    color: #FF7804;
+
+  }
 }
 
 .container-inline {

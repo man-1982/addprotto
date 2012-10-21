@@ -23,6 +23,10 @@ body {
 #page {
 }
 
+.description {
+  font-size: 0.85em;
+}
+
 @import "compass/typography/links";
 
 a{
@@ -60,11 +64,15 @@ a{
 }
 
 #logo { /* Wrapping link for logo */
-  float: left; /* LTR */
+  float: left;
+  left: 50%;
   margin: 0;
   padding: 0;
+  position: relative;
 
   img {
+    position: relative;
+    right: 50%;
     vertical-align: bottom;
   }
 }
@@ -76,6 +84,7 @@ a{
 #preface-top {
   @include clearfix;
   clear: both;
+  margin: 0 40px;
 }
 
 #site-name { /* The name of the website */
@@ -144,11 +153,13 @@ h3.title { /* Comment title */
 }
 
 h1.title {
-  background: url(../images/h1_baground.jpg) no-repeat;
-  display: block;
-  height: 80px;
+  background: inline-image("../images/h1_baground.jpg", 'image/png') no-repeat scroll 0 0 transparent;
+  *background: inline-image("../images/h1_baground.jpg", 'image/png') no-repeat scroll 0 0 transparent;
   color: #EB8F00;
-  padding-top: 4px;
+  display: block;
+  height: 72px;
+  padding-left: 11px;
+  padding-top: 5px;
 }
 
 tr.even { /* Some tables have rows marked even or odd. */
@@ -262,34 +273,70 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 .wrapper-page-bottom {
   border-top: 1px solid wrapper-page-bottom #ebb783;
+  vertical-align: baseline;
   background-image: url('../images/page-bottom-bg.png');
   background-repeat: repeat-x;
   background-color: #ee7f01;
   padding-top: 2em;
-    /* Wrapper for any blocks placed in the page bottom region */
-  .region-bottom {
-    h2 {
-      color: #fff;
-    }
-    ul {
-      li {
+  margin-top: 1em;
 
-        list-style: none;
+  #footer-inner {
+    margin-right: auto;
+    margin-left: auto;
+    width: 960px;
+
+    .region-bottom {
+      clear: both;
+      display: inline;
+      float: left;
+      position: relative;
+      margin-right: 10px;
+      margin-left: 10px;
+      width: 940px;
+
+
+      h2 {
+        color: #fff;
       }
-    }
-    a {
-      color: #fff4f4;
-      text-decoration: none;
-      &:hover {
-        color: #fcd88a;
+      ul {
+        li {
+
+          list-style: none;
+        }
       }
-    }
+      a {
+        color: #fff4f4;
+        text-decoration: none;
+        &:hover {
+          color: #fcd88a;
+        }
+      }
 
-    .block {
-      display: inline-block;
-      //float: left;
-    }
+      .block {
+        display: inline;
+        float: left;
+        margin-right: 10px;;
+        position: relative;
+      }
 
+
+    }
+  }
+  /* Wrapper for any blocks placed in the page bottom region */
+
+
+}
+.clear-block {
+  display: block;
+
+  &:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+  &:before {
 
   }
 
