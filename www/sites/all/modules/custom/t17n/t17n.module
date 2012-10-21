@@ -35,6 +35,7 @@ function t17n_theme($existing, $type, $theme, $path) {
   $theme = array(
     't17n_hierarchical_tree' => array(
         'variables' => array('hierarchical_tree' => NULL, 'attributes' => array()),
+        'file'     => 't17n.theme.inc',
     ),
   );
 return $theme;
@@ -74,4 +75,106 @@ function t17_items_devel() {
   $variables['attributes'] = array('id' => 'proba-1', 'class' => array('proba-class-1', 'proba-class-2'));;
 
   return theme_item_list($variables);
+}
+
+/**
+ * hook_block_info
+ */
+function t17n_block_info() {
+  foreach (taxonomy_get_vocabularies() as $vocabulary) {
+    if ($delta = variable_get('t17n_voc_block_' . $vocabulary->vid, FALSE)) {
+      $blocks[$delta] = array(
+        'info' => t('t17 @voc', array('@voc' => $vocabulary->name)),
+      );
+    }
+  }
+
+  return empty($blocks) ? array(): $blocks;
+}
+
+/**
+ * hook_block_view($delta = '')
+ * @param string $delta
+ */
+function t17n_block_view($delta = ''){
+
+
+
+  if ($block_delta_name =variable_get($delta, FALSE) ) {
+    $vid = str_replace('t17n_voc_block_', '', $block_delta_name);
+    $vocabulary = taxonomy_vocabulary_load($vid);
+    $block['subject'] =  $vocabulary->name;
+    $hierarchical_tree = t17n_get_hierarchical_tree($vocabulary->vid);
+
+//  dpm(t17n_get_hierarchical_tree($voc->vid), 'child tree');
+    $variables['hierarchical_tree'] = $hierarchical_tree;
+    $variables['attributes'] = array();
+    $block['content'] =  theme('t17n_hierarchical_tree', $variables);
+  }
+
+  return empty($block)? array(): $block;
+}
+
+/**
+ * Get hierarctical tree with childs
+ */
+function t17n_get_hierarchical_tree($vid) {
+
+  $parent_tree = t17n_get_parents_tree($vid);
+
+  $hierarchical_tree =  t17n_get_childs_tree($parent_tree);
+
+  return $hierarchical_tree;
+}
+
+/**
+ * Get all parents tree whith parents id =0
+ * @param $vid
+ * @return array
+ */
+function t17n_get_parents_tree($vid) {
+
+  $parents = &drupal_static(__FUNCTION__, array());
+
+  if ($vid && !isset($parents[$vid])) {
+    $query = db_select('taxonomy_term_data', 't');
+    $query->join('taxonomy_term_hierarchy', 'h', 'h.tid = t.tid');
+    $query->addField('t', 'tid');
+    $query->condition('t.vid', $vid);
+    $query->condition('h.parent', 0);
+    $query->addTag('term_access');
+    $query->orderBy('t.weight');
+    $query->orderBy('t.name');
+    $tids = $query->execute()->fetchCol();
+    $terms = taxonomy_term_load_multiple($tids);
+    $parents[$vid] = $terms;
+  }
+
+  return isset($parents[$vid]) ? $parents[$vid] : array();
+}
+
+/**
+ * Get childs for terms tree
+ * @param $tree
+ */
+function t17n_get_childs_tree($tree, $depth = 0) {
+  $tree_parent = array();
+  if(is_array($tree)) {
+
+    foreach($tree as $key => $parent_term) {
+      $tree_parent[$key] = $parent_term;
+      $childs = taxonomy_get_children($parent_term->tid, $parent_term->vid);
+
+      $tree_parent[$key]->t17n_depth = $depth;
+      if (!empty($childs)) {
+        $childs_depth = $tree_parent[$key]->t17_depth +1;
+        $tree_parent[$key]->childs = t17n_get_childs_tree($childs, $childs_depth );
+      }
+
+    }
+
+  }
+
+
+  return $tree_parent;
 }
