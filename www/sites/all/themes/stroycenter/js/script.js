@@ -22,8 +22,9 @@
 
 
       if(jQuery().corner) {
-        $("#search-block-form .search-input").corner('10px');
-//        $(".wrapper-page-bottom").corner("top 40px" );
+        $("#search-block-form .search-input").not('corner-process').corner('10px').addClass('corner-process');
+        $("#main #content").not('corner-process').corner('4px').addClass('corner-process');
+        $(".wrapper-page-bottom").not('corner-process').corner('top 6px' ).addClass('corner-process');
       }
 
     }

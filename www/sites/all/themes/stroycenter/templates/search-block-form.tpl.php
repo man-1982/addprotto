@@ -28,7 +28,7 @@
  *
  * @see template_preprocess_search_block_form()
  */
-$path_image_loop = url(drupal_get_path('theme', 'stroycenter') . '/images/lop.jpg', array('absolute' => TRUE));
+$path_image_loop = url(drupal_get_path('theme', 'stroycenter') . '/images/lop.png', array('absolute' => TRUE));
 
 global $user;
 

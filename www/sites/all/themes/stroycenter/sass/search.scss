@@ -1,6 +1,5 @@
 @import "base";
 @import "compass/css3";
-@import "compass/css3/pie";
 
 $search-width: 385px;
 
@@ -8,7 +7,8 @@ $search-width: 385px;
   width: $search-width;
   float: right;
 
-  @incude single-box-shadow(0 0 5px rgba(0, 0, 0, 0.5) );
+
+
   position: relative;
   @include clearfix;
 
@@ -21,17 +21,22 @@ $search-width: 385px;
     padding: 3px 15px 3px 2px;
     display: block;
     border: 1px solid #1C94C4;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+    //@incude single-box-shadow(#FFFFFF, 0 , 5 , 1, 1 inset);
+    //@include box-shadow(rgba( blue , 0.4 ) 0  0 25px  , rgba(green , 0.2 ) 0 0 3px 1px inset  );
+
   }
 
   .search-input:hover {
     display: block;
     border: 1px solid #EB8F00;
+
   }
   .search-submit {
     margin: 0;
     padding: 0;
     position: absolute;
-    right: 0px;
-    top: 5px;
+    right: 22px;
+    top: 2px;
   }
 }

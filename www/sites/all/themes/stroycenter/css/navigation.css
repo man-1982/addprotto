@@ -107,34 +107,36 @@ li a.active {
   background-color: transparent;
   display: block;
   padding-left: 8px;
+  border-bottom: 1px solid #ededed;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003123}}
 #main-menu ul.nice-menu li:hover {
   background-color: #ee7f01;
   border-bottom: 1px solid #ededed;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003129}}
 #main-menu ul.nice-menu li.menuparent {
+  display: block;
   background: url('data:"image/png";base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKBhECB3dFD+8AAABSSURBVAjXtYtbDYAwFMV67ngYWJCARGYBkLqgYMAuHwMJNOlXUx376FeFzqBWkJrnDQLIa++SqA7BBO7EVCRe8ja4aFdcigDsi1MqCiaC2cy/PAXwFjWW1s1FAAAAAElFTkSuQmCC') right center no-repeat;
   *background: url('data:"image/png";base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKBhECB3dFD+8AAABSSURBVAjXtYtbDYAwFMV67ngYWJCARGYBkLqgYMAuHwMJNOlXUx376FeFzqBWkJrnDQLIa++SqA7BBO7EVCRe8ja4aFdcigDsi1MqCiaC2cy/PAXwFjWW1s1FAAAAAElFTkSuQmCC') right center no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003133}}
 #main-menu ul.nice-menu li.menuparent:hover {
   border-bottom: 1px solid #ededed;
   background: url('data:"image/png";base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKFQ4vBey3KBAAAAAqSURBVAjXtYoxDgAgDITA/v/N59TEmDrKBsEk4YEA06Bqyzl0X3cAir9s3UoMCQ9975gAAAAASUVORK5CYII=') #ee7f01 right center no-repeat;
   *background: url('data:"image/png";base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKFQ4vBey3KBAAAAAqSURBVAjXtYoxDgAgDITA/v/N59TEmDrKBsEk4YEA06Bqyzl0X3cAir9s3UoMCQ9975gAAAAASUVORK5CYII=') #ee7f01 right center no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003138}}
 #main-menu ul.nice-menu li.menuparent li.menuparent {
   background: url('data:"image/png";base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKFQ4wCShbaqUAAAAySURBVAjXfc6xDQAgDAPBd/ZfGZmC0KCYryKdi2DbhAogDeoePtWI3YooSSO+wO8ZgA0u0hP/echY+gAAAABJRU5ErkJggg==') #ee7f01 right center no-repeat;
   *background: url('data:"image/png";base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKFQ4wCShbaqUAAAAySURBVAjXfc6xDQAgDAPBd/ZfGZmC0KCYryKdi2DbhAogDeoePtWI3YooSSO+wO8ZgA0u0hP/echY+gAAAABJRU5ErkJggg==') #ee7f01 right center no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003141}}
 #main-menu ul.nice-menu li.menuparent li.menuparent:hover {
   background-color: #ee7f01;
   border-bottom: 1px solid #ededed;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003149}}
 #main-menu ul.nice-menu a {
   display: block;
   color: black;
@@ -142,19 +144,19 @@ li a.active {
   margin-right: 7px;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003154}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003156}}
 #main-menu ul.nice-menu a:hover {
   color: #fffcf6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003160}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003162}}
 #main-menu ul.nice-menu a.active {
   color: #ee7f01;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003162}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003164}}
 #main-menu ul.nice-menu a.active:hover {
   color: #fffcf6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003168}}
 #main-menu ul.nice-menu ul {
   position: absolute;
   visibility: hidden;
@@ -165,13 +167,13 @@ li a.active {
   margin-right: 0;
   /* LTR */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003176}}
 #main-menu ul.nice-menu ul li {
   display: block;
   width: 12.5em;
   background-color: #ee7f01;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003184}}
 #main-menu ul.nice-menu:after {
   content: ".";
   display: block;
@@ -179,18 +181,18 @@ li a.active {
   clear: both;
   visibility: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003192}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003194}}
 #main-menu ul.nice-menu-down li {
-  border: none;
+  display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003197}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003199}}
 #main-menu ul.nice-menu-down li ul li ul {
   left: 12.5em;
   /* LTR */
   top: -1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\00003211}}
 #secondary-menu {
   float: left;
   /* LTR */

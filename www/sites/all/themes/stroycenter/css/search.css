@@ -1,8 +1,7 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\000036}}
 #search-block-form {
   width: 385px;
   float: right;
-  @incude single-box-shadow(0 0 5px rgba(0, 0, 0, 0.5) );
   position: relative;
   overflow: hidden;
 }
@@ -16,17 +15,18 @@
   padding: 3px 15px 3px 2px;
   display: block;
   border: 1px solid #1C94C4;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000330}}
 #search-block-form .search-input:hover {
   display: block;
   border: 1px solid #EB8F00;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000335}}
 #search-block-form .search-submit {
   margin: 0;
   padding: 0;
   position: absolute;
-  right: 0px;
-  top: 5px;
+  right: 22px;
+  top: 2px;
 }

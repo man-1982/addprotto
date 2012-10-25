@@ -118,6 +118,7 @@ li a.active {
      background-color: $bg-color-ul-li;
      display: block;
      padding-left: 8px;
+     border-bottom: 1px solid  $border-color;
 
      &:hover {
        background-color: $bg-color-ul-li-hover;
@@ -126,6 +127,7 @@ li a.active {
 
    }
    li.menuparent {
+     display: block;
      background: inline-image('../images/menu-expanded.png' ,'image/png') right center no-repeat;
      *background: inline-image('../images/menu-expanded.png' ,'image/png') right center no-repeat;
      &:hover {
@@ -190,7 +192,7 @@ li a.active {
 
 
   ul.nice-menu-down li {
-    border: none;
+    display: block;
 
     ul {
       li {
