@@ -1,0 +1,40 @@
+
+/*
+ * Note: your browser may not support the markup you had in mind for your
+ * option lists. Firefox is generally good. In Chrome and Safari colours tend
+ * to work, but font styles are often ignored.
+ */
+.option-parent {
+  font-weight: bolder;
+  color: grey;
+  background-color: lightpink;
+}
+
+.option-child {
+  font-weight: normal;
+  color: grey;
+  background-color: white;
+}
+
+select.with-style option[selected="selected"] {
+  font-style: italic;
+}
+
+/* Example of using flag images as option backgrounds.
+   For this to work create a country taxonomy with the countries France,
+   Germany, Belgium and Netherlands as the terms.
+   Then when configuring the associated field, enter as the transform callback
+   "select_with_style_country_name_to_code".
+   Make sure that the url()'s below point to existing files on your system.
+   You can download these public domain flag images from http://www.famfamfam.com/lab/icons/flags
+
+.option-parent,
+.option-child {
+  font-size: 15px;
+  padding-left: 25px;
+}
+.group-fr { background: url(flag_icons/fr.png) no-repeat 2px 4px; }
+.group-de { background: url(flag_icons/de.png) no-repeat 2px 4px; }
+.group-be { background: url(flag_icons/be.png) no-repeat 2px 4px; }
+.group-nl { background: url(flag_icons/nl.png) no-repeat 2px 4px; }
+*/

@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * select_with_style.install
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * For esthetic purposes only.
+ * Sets the weight to one less than core's Options module, so that the widget
+ * 'Select...' options appear together.
+ */
+function select_with_style_install() {
+  db_update('system')
+    ->fields(array('weight' => -1))
+    ->condition('name', 'select_with_style')
+    ->execute();
+}
+
+/**
+ * Implements hook_uninstall().
+ *
+function select_with_style_uninstall() {
+}
+ */

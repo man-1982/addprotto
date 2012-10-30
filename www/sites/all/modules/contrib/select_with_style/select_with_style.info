@@ -1,0 +1,14 @@
+name = Select with Style
+description = Create more attractive looks for select lists, in particular those containing parent/child taxonomies.
+core = 7.x
+configure = admin/config/system/select_with_style
+; List files that contain classes
+files[] = views/select_with_style_handler_filter_term_node_tid.inc
+
+version = "7.x-1.x-dev"
+; Information added by drupal.org packaging script on 2012-07-30
+version = "7.x-1.4"
+core = "7.x"
+project = "select_with_style"
+datestamp = "1343612892"
+
