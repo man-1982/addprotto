@@ -4,7 +4,8 @@
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation-rtl\.scss}line{font-family:\000039}}
 ul li.collapsed {
-  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABNJREFUCB1j4GASYFJgcmD+A4IADUIDfIUMT4wAAAAASUVORK5CYII=');
+  *list-style-image: url(../images/menu-collapsed-rtl.png);
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKBhEEHKt6YYUAAABUSURBVAjXfczBCkBAGMTxmbW4K48qL+CCx3QU91W+cRDWJv/T1K8GSJr7Utf2MSzDAwDgYth2wZTgOp6QZwShN1ZNoHeEzEB+3NZtIOkg/DR1xe0HvfMcbN43sl8AAAAASUVORK5CYII=');
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation-rtl\.scss}line{font-family:\0000318}}

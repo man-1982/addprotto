@@ -185,11 +185,11 @@ $zen-auto-include-item-base: false;
 
   .sidebar-second {
     #content { /* Span 4 columns, starting in 1st column from left. */
-      @include zen-grid-item(4, 1);
+      @include zen-grid-item(3, 1);
     }
 
     .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
-      @include zen-grid-item(1, 5);
+      @include zen-grid-item(2, 4);
     }
   }
 

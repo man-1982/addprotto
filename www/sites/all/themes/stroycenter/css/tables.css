@@ -1,7 +1,6 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\000034}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\000034}}
 table {
   color: #333333;
-  width: 95%;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/lib\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/tables\/_scaffolding\.scss}line{font-family:\000032}}
 table th {
@@ -18,34 +17,34 @@ table td.numeric,
 table th.numeric {
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000314}}
 table thead {
   border-bottom: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000318}}
 table thead th {
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000321}}
 table thead tr {
   border: 1px solid #fbd850;
   border-bottom: none;
   line-height: 3.3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000328}}
 table tr {
   border: 1px solid #dddddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000331}}
 table tr:hover {
   border: 1px solid #FBCB09;
   background: url("../images/ui-bg_glass_100_fdf5ce_1x400.png");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000336}}
 table tfoot {
   line-height: 1.3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/stroimpmr\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/tables\.scss}line{font-family:\0000340}}
 table tfoot th, table tfoot td {
   border-top: 1px solid #fbd850;
 }

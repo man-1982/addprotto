@@ -35,6 +35,9 @@ nav,
 section,
 summary {
   display: block;
+  display: block;
+  position: relative;
+  z-index: 1;
 }
 
 /*
@@ -422,14 +425,21 @@ ul,
   float: right;
   margin: 0px;
   padding: 0px;
+  li {
+    float: left;
+    padding-left: 10px;
+    display: block;
+
+    a {
+      color: #9c9e9f;
+      &:hover {
+        color: #EE7F01;
+      }
+    }
+
+  }
 }
 
-.item-list ul.wrapper-user-login li{
-  float: left;
-  padding-left: 10px;
-  display: block;
-
-}
 
 /*
  * Corrects list images handled incorrectly in IE7

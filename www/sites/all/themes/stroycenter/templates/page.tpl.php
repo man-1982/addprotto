@@ -93,7 +93,8 @@
               print theme('nice_menus_main_menu', array(
                 'direction' => 'down',
                 'depth' => -1,
-              )); ?>
+              ));
+              ?>
             </nav>
         <?php elseif ($main_menu): ?>
             <nav id="main-menu" role="navigation">

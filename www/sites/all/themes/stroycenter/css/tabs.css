@@ -14,6 +14,7 @@
 ul.primary,
 ul.secondary {
   overflow: hidden;
+  *zoom: 1;
   border-bottom: 1px solid #fbcb09;
   list-style: none;
   margin: 1em 0 1.5em;

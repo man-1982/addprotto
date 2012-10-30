@@ -172,6 +172,15 @@ form table .item-list ul {
   margin: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/forms\.scss}line{font-family:\00003161}}
+.lt-ie8 tr.even th,
+.lt-ie8 tr.even td,
+.lt-ie8 tr.odd th,
+.lt-ie8 tr.odd td {
+  border-bottom: 1px solid #ccc;
+  /* IE doesn't display borders on table rows */
+}
+
 /*
  * Drupal core wrongly puts this in system.menus.css. Since we override that, add it back.
  */

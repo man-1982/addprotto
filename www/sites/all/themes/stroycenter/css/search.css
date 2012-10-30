@@ -4,6 +4,7 @@
   float: right;
   position: relative;
   overflow: hidden;
+  *zoom: 1;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000315}}
 #search-block-form .search-input {
@@ -14,18 +15,19 @@
   font-size: 87%;
   padding: 3px 15px 3px 2px;
   display: block;
-  border: 1px solid #1C94C4;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000327}}
 #search-block-form .search-input:hover {
   display: block;
-  border: 1px solid #EB8F00;
+  border: 1px solid #9c9e9f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000333}}
 #search-block-form .search-submit {
+  border-left: 1px solid #9c9e9f;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 5px;
   position: absolute;
   right: 22px;
   top: 2px;

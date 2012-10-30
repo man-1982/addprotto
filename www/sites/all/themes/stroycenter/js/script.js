@@ -30,5 +30,29 @@
     }
   };
 
+  Drupal.behaviors.mainMenu = {
+    attach: function(context, settings) {
+      var top_nice_menu = $('#main-menu').offset();
+
+
+//      $('#main-menu').addClass('primary-menu-top-position');
+
+      $(window).scroll(function() {
+        if(window.console) {
+          console.log($(this).scrollTop());
+          console.log(top_nice_menu.top);
+        }
+
+        if($(this).scrollTop() > top_nice_menu.top) {
+          $('#main-menu').addClass('primary-menu-top-position');
+        }
+        else {
+          $('#main-menu').removeClass('primary-menu-top-position');
+        }
+
+      });
+    }
+  }
+
 
 })(jQuery, Drupal, this, this.document);
