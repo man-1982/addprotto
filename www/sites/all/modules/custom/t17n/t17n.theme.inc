@@ -13,6 +13,7 @@ function theme_t17n_hierarchical_tree($variables) {
 
   drupal_add_js(drupal_get_path('module', 't17n').'/js/t17n-accordion.js');
   drupal_add_css(drupal_get_path('module', 't17n') . '/css/ui-lightness/jquery-ui-1.8.23.custom.css');
+  drupal_add_css(drupal_get_path('module', 't17n') . '/css/t17n.css');
 
   $output = '';
   $hierarchical_tree = $variables['hierarchical_tree'];
@@ -55,13 +56,19 @@ function _theme_t17n_hierarchical_tree($hierarchical_tree, $attributes = array()
     // Headers for accordion
     $output .= '<li' .drupal_attributes($attributes_term) . '>';
 
-    $output .= l($term->name .' - ' . $term->tid, 'taxonomy/term/' . $term->tid);
+    $count_product = t17n_get_nodes_count($term->tid, 'product_or_service');
+    $count_company =  t17n_get_nodes_count($term->tid);
+
+    $count_node = '<span class="t17-count-nodes">' .$count_company  ."($count_product)" . '</span>';
+
+    $output .= l($term->name, 'taxonomy/term/' . $term->tid, array('html'=> TRUE)) . $count_node;
 
     $output .= "</li>\n";
     //end header for accordion
 
     // body of accordion
-    $output .= '<div class="t17-body-accordion">'. l($term->name .' - ' . $term->tid, 'taxonomy/term/' . $term->tid) ;
+
+    $output .= '<div class="t17-body-accordion">'. l($term->name , 'taxonomy/term/' . $term->tid) ;
 
     if(is_array($term->childs)&&!empty($term->childs)) {
       $childs_array = $term->childs;

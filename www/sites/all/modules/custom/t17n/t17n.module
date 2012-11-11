@@ -178,3 +178,25 @@ function t17n_get_childs_tree($tree, $depth = 0) {
 
   return $tree_parent;
 }
+
+/**
+ * retrive count of node when related with terms $tid
+ * @param $tid
+ * @param string $node_type
+ * @return mixed
+ */
+function t17n_get_nodes_count($tid, $node_type = 'company') {
+//  $sql = <<<SQL
+//SELECT COUNT(n.nid) FROM {taxonomy_index} ti
+//JOIN {node} n ON n.nid = ti.nid
+//WHERE ti.tid = :tid AND n.type = ':type'
+//SQL;
+  $query = db_select('taxonomy_index', 't');
+  $query->addExpression('COUNT(t.nid)');
+  $query->Join('node', 'n', 'n.nid = t.nid');
+  $query->condition('n.type', $node_type);
+  $query->condition('t.tid', $tid);
+  $query->addTag('node_access');
+  $result = $query->execute()->fetchCol();
+  return $result[0];
+}
