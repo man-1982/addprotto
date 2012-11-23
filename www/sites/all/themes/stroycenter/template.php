@@ -134,6 +134,9 @@ function stroycenter_build_page_trails($page_menu) {
   return $trail;
 }
 
+function stroycenter_preprocess_html(&$variables, $hook) {
+}
+
 /**
  * @param $vars
  */

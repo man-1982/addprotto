@@ -27,13 +27,6 @@ ul,
 /*
  * 3. Corrects alignment displayed oddly in IE6/7
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/normalize-rtl\.scss}line{font-family:\0000337}}
-legend {
-  *margin-left: 0;
-  *margin-right: -7px;
-  /* 3 */
-}
-
 /* =============================================================================
    Tables
    ========================================================================== */

@@ -1,0 +1,59 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/baners\.scss}line{font-family:\000033}}
+#block-views-baners-on-main-block {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/baners\.scss}line{font-family:\000036}}
+#block-views-baners-on-main-block #views_slideshow_controls_text_baners_on_main-block {
+  visibility: hidden;
+  position: absolute;
+  z-index: 105;
+  bottom: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/baners\.scss}line{font-family:\0000312}}
+#block-views-baners-on-main-block #views_slideshow_controls_text_baners_on_main-block span a {
+  background-image: url('../images/bg_direction_nav_white.png?1353249185');
+  display: block;
+  width: 27px;
+  height: 27px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/baners\.scss}line{font-family:\0000321}}
+#block-views-baners-on-main-block #views_slideshow_controls_text_baners_on_main-block span.views-slideshow-controls-text-previous a {
+  background-position: 27px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/baners\.scss}line{font-family:\0000329}}
+#block-views-baners-on-main-block:hover #views_slideshow_controls_text_baners_on_main-block {
+  visibility: visible;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/baners\.scss}line{font-family:\0000334}}
+#block-views-baners-on-main-block .baners-on-main {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/baners\.scss}line{font-family:\0000337}}
+#block-views-baners-on-main-block .baners-on-main .description-baners-on-main {
+  position: absolute;
+  background: url('../images/top-stories-info-bg.png?1352928690');
+  bottom: 0px;
+  color: #FFFFFF;
+  margin: 8px;
+  padding: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/baners\.scss}line{font-family:\0000345}}
+#block-views-baners-on-main-block .baners-on-main .description-baners-on-main a {
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/baners\.scss}line{font-family:\0000347}}
+#block-views-baners-on-main-block .baners-on-main .description-baners-on-main a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/baners\.scss}line{font-family:\0000355}}
+#block-views-baners-on-main-block .slideshow-right-corner {
+  height: 9px;
+}

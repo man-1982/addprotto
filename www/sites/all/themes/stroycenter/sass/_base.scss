@@ -24,7 +24,7 @@
 // variable for a couple edge cases. We include it for completeness sake. See
 // the documentation at http://compass-style.org/reference/compass/support/
 $legacy-support-for-ie6: false;
-$legacy-support-for-ie7: true;
+$legacy-support-for-ie7: false;
 $legacy-support-for-ie8: true;
 
 
@@ -81,6 +81,10 @@ $font-monospace:   $courier;
 //
 // Colors, etc.
 //
+
+$label-color: #1C94C4;
+
+$description-color: #68696B;
 
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 30px;

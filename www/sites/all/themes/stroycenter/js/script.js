@@ -18,6 +18,7 @@
 //        $(".column").equalHeights();
         var main_height = $('#main').height();
         $('.region-sidebar-second').height(main_height);
+        $('.region-sidebar-on-main').height(main_height);
       }
 
 
@@ -54,5 +55,23 @@
     }
   }
 
+    /**
+     * In form added croll
+     * @type {Object}
+     */
+  Drupal.behaviors.formTableWidth = {
+        attach: function(context, settings) {
+            $('form table', context).not('.process-form-with').each(function() {
+                var table = $(this);
+                table.addClass('process-form-with');
+                var parentTables= table.parent();
+                if(window.console) {
+                  console.log(parentTables);
+                }
+                parentTables.css({'overflow':"scroll"});
+
+            })
+        }
+    }
 
 })(jQuery, Drupal, this, this.document);

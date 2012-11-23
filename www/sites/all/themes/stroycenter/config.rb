@@ -31,7 +31,7 @@ javascripts_dir = "js"
 # Assuming this theme is in sites/*/themes/THEMENAME, you can add the partials
 # included with a module by uncommenting and modifying one of the lines below:
 #add_import_path "../../../default/modules/FOO"
-#add_import_path "../../../all/modules/FOO"
+#add_import_path "../../../all/modules/custom/t17n
 #add_import_path "../../../../modules/FOO"
 
 

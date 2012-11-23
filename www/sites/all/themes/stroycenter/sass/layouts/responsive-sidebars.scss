@@ -211,3 +211,20 @@ $zen-auto-include-item-base: false;
     }
   }
 }
+
+@media all and (min-width: 960px) {
+
+  $zen-column-count: 5;
+
+  .front {
+    #content { /* Span 3 columns, starting in 1st column from left. */
+      @include zen-grid-item(3, 1);
+    }
+
+    .region-sidebar-on-main { /* Span 3 column, starting in 4th column from left. */
+      @include zen-grid-item(2, 4);
+      margin-top: 1.8em;
+    }
+  }
+
+}

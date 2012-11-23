@@ -4,7 +4,6 @@
   float: right;
   position: relative;
   overflow: hidden;
-  *zoom: 1;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/search\.scss}line{font-family:\0000315}}
 #search-block-form .search-input {

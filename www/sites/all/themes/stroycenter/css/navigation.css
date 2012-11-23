@@ -7,15 +7,12 @@
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\0000315}}
 ul li.expanded {
-  *list-style-image: url(../images/menu-expanded.png);
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKBhECB3dFD+8AAABSSURBVAjXtYtbDYAwFMV67ngYWJCARGYBkLqgYMAuHwMJNOlXUx376FeFzqBWkJrnDQLIa++SqA7BBO7EVCRe8ja4aFdcigDsi1MqCiaC2cy/PAXwFjWW1s1FAAAAAElFTkSuQmCC');
   list-style-type: circle;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\0000322}}
 ul li.collapsed {
-  *list-style-image: url(../images/menu-collapsed.png);
-  /* LTR */
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKBhEDDY6L17AAAABUSURBVAjXXY1BDkAwFAXntQ17zsoVJBzUir2Qfgvaqlm9ZCZ58LJOrfHDpdF42Jc6yPKMcEVjm0uQZZDhJYwSZGkIM0OIfjwEEKoPJ7rhERXfr8QNS3wbgWeRqzIAAAAASUVORK5CYII=');
   /* LTR */
   list-style-type: disc;
@@ -23,7 +20,6 @@ ul li.collapsed {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\0000329}}
 ul li.leaf {
-  *list-style-image: url(../images/ui-icons_ffd27a_256x240-2-2.png);
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKBhMpGxaweqcAAAAlSURBVDjLY2AYBUMA/LlU85+mhjCSophFr4WR/t6gShiMAvwAAJwMESYrkRkdAAAAAElFTkSuQmCC');
   list-style-type: square;
   list-style-position: inside;
@@ -60,7 +56,6 @@ li a.active {
   height: 1px;
   width: 1px;
   overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/navigation\.scss}line{font-family:\0000367}}
@@ -100,7 +95,7 @@ li a.active {
 #main-menu ul.nice-menu {
   list-style: none outside none;
   border: none;
-  margin: 0;
+  margin: 0 0 1em 0;
   padding: 0;
   position: relative;
   z-index: 5;

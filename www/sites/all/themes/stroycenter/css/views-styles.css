@@ -53,3 +53,75 @@
   -o-border-radius: 0 0 7px 7px;
   border-radius: 0 0 7px 7px;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/views-styles\.scss}line{font-family:\0000351}}
+#views-exposed-form-str-company-page .views-exposed-form .views-exposed-widgets {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/views-styles\.scss}line{font-family:\0000355}}
+#views-exposed-form-str-company-page .views-exposed-form .views-exposed-widgets .views-widget-filter-title .views-widget {
+  padding-top: 7px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/views-styles\.scss}line{font-family:\0000365}}
+.view-str-company .views-row {
+  overflow: hidden;
+  position: relative;
+  padding: 0.8em 0px;
+  border-bottom: 1px #cccccc solid;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/views-styles\.scss}line{font-family:\0000371}}
+.view-str-company .views-row .views-field-title {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/views-styles\.scss}line{font-family:\0000374}}
+.view-str-company .views-row .views-field-field-logo-company {
+  float: left;
+  margin-right: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/views-styles\.scss}line{font-family:\0000379}}
+.view-str-company .views-row .views-field-body {
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/views-styles\.scss}line{font-family:\0000383}}
+.view-str-company .views-row .company-learn-more {
+  visibility: hidden;
+  float: right;
+  padding: 1em;
+  margin: 0.2em;
+  background: url('../images/ui-bg_glass_100_f6f6f6_1x400.png?1347778786') repeat-x scroll 50% 50% #f6f6f6;
+  border: 1px solid #CCCCCC;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/views-styles\.scss}line{font-family:\0000390}}
+.view-str-company .views-row .company-learn-more:hover {
+  background: url('../images/ui-bg_glass_100_fdf5ce_1x400.png?1347778786') repeat-x scroll 50% 50% #fdf5ce;
+  border: 1px solid #FBCB09;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/views-styles\.scss}line{font-family:\0000398}}
+.view-str-company .views-row:hover .company-learn-more {
+  position: relative;
+  bottom: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/views-styles\.scss}line{font-family:\00003103}}
+.view-str-company .views-row:hover .company-learn-more {
+  visibility: visible;
+  vertical-align: bottom;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/views-styles\.scss}line{font-family:\00003110}}
+.view-str-company .views-row:hover {
+  border-bottom: 1px #FBCB09 solid;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/views-styles\.scss}line{font-family:\00003114}}
+.view-str-company .views-row-odd {
+  background: #F8F8F9;
+}

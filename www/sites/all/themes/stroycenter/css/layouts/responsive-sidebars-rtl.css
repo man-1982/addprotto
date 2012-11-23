@@ -47,13 +47,6 @@
 /*
  * Containers for grid items and flow items.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\0000372}}
-#header,
-#main,
-#footer {
-  *position: relative;
-  *zoom: 1;
-}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000352}}
 #header:before, #header:after,
 #main:before,
@@ -266,5 +259,24 @@
     width: 20%;
     margin-right: 80%;
     margin-left: -100%;
+  }
+}
+@media all and (min-width: 960px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003220}}
+  .front #content {
+    /* Span 3 columns, starting in 1st column from left. */
+    float: right;
+    width: 60%;
+    margin-right: 0%;
+    margin-left: -60%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/E\/WEBSERVER\/home\/stroimpmr\/www\/sites\/all\/themes\/stroycenter\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003224}}
+  .front .region-sidebar-on-main {
+    /* Span 3 column, starting in 4th column from left. */
+    float: right;
+    width: 40%;
+    margin-right: 60%;
+    margin-left: -100%;
+    margin-top: 1.8em;
   }
 }

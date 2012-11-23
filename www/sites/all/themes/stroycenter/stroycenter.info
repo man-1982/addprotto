@@ -65,6 +65,9 @@ stylesheets[all][] = css/forms.css
 stylesheets[all][] = css/fields.css
 stylesheets[all][] = css/print.css
 
+
+stylesheets[all][] = css/baners.css
+
 ; Built-in conditional stylesheet support has been removed from Zen 7.x-5.x.
 ; Instead, Zen now adds conditional-comment-included classes to the html
 ; element, such as .lt-ie9, .lt-ie8, .lt-ie7. More information on this
@@ -106,6 +109,7 @@ regions[preface_top]     = Preface Top
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
+regions[sidebar_on_main] = Sidebar on Main
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
 regions[footer]         = Footer
